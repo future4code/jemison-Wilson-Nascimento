@@ -4,7 +4,8 @@
 
 
 // EXERCÍCIO 01
-function retornaTamanhoArray(array = [0,1,2,3,4]) {
+function retornaTamanhoArray(array) {
+    array[0,1,2,3,4]
    return array.length
 }
 
@@ -17,7 +18,7 @@ function retornaArrayInvertido(array) {
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-  
+    return array.sort()
 }
 
 // EXERCÍCIO 04
