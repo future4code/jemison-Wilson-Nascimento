@@ -5,7 +5,6 @@
 
 // EXERCÍCIO 01
 function retornaTamanhoArray(array) {
-    array[0,1,2,3,4]
    return array.length
 }
 
@@ -13,26 +12,47 @@ function retornaTamanhoArray(array) {
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
     return array.reverse()
-  
 }
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-    return array.sort()
+    function funcaoDeComparacao(num1, num2) {
+        if (num1 < num2) {
+            return -1;
+        } else {
+            return 1
+        }
+    }
+    return array.sort(funcaoDeComparacao)
 }
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  
+    return array.filter((numero) => {
+        if (numero % 2 === 0) {
+            return numero;
+        }
+    })
 }
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+    return array.filter((numero) => {
+        if (numero % 2 === 0) {
+            return Math.pow(numero, 2)
+        }
+    })
 }
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
+    let maior = -Infinity
+    for(let numero of array){
+        if(numero < maior){
+            maior = numero
+            return numero
+        }
+    }
   
 }
 
